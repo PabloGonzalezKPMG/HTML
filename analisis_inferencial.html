@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Inferencial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9fafc;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #002855, #004080);
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .intro-section {
+            max-width: 1100px;
+            margin: 0 auto 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .intro-section h2 {
+            font-size: 22px;
+            color: #002855;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .intro-section p {
+            font-size: 16px;
+            color: #666;
+        }
+        details {
+            margin: 15px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        details[open] {
+            background: #f4f6f9;
+        }
+        summary {
+            padding: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            color: #004080;
+            background: #e6f0ff;
+            border: none;
+            outline: none;
+        }
+        summary:hover {
+            background: #cce5ff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        h2{
+        text-align: center;
+        }
+        th {
+            background-color: #004080;
+            color: white;
+            font-weight: 500;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #eaf3ff;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>Análisis Inferencial</header>
+
+    <div class="intro-section">
+        <h2>¿Cómo se ha realizado este análisis?</h2>
+        <p>Se realizó un análisis basado en tablas de contingencia y un test Chi-Cuadrado que evalúa la relación entre las categorías (p < 0.05).
+        Solo se presentan resultados donde la categoría dominante supera el 85% de los registros y el número total de registros por fila es considerable (40 o más). 
+        Esto garantiza que las conclusiones sean confiables y relevantes.</p>
+    </div>
+
+        <details>
+            <summary>Pregunta: 1. ¿Hace cuánto tiempo es panelista en el estudio de Correos?</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>Más de 1 año</td>
+                    <td>10. ¿En algún momento ha tenido sospecha de haber sido identificado como Panelista por parte de Correos?</td>
+                    <td>Tiende a ser '  no'.</td>
+                    <td>96.91%</td>
+                    <td>97</td>
+                </tr>
+        
+                <tr>
+                    <td>Más de 1 año</td>
+                    <td>11. ¿Qué medidas ha tomado ante la sospecha de haber sido identificado como Panelista por parte de Correos?</td>
+                    <td>Tiende a ser '  no procede por no haber tenido sospecha de ser identificado'.</td>
+                    <td>89.69%</td>
+                    <td>97</td>
+                </tr>
+        
+                <tr>
+                    <td>Más de 1 año</td>
+                    <td>14. ¿Es suficiente la información inicial que le proporcionan para la cumplimentación de los datos asociados con los envíos que usted recibe?</td>
+                    <td>Tiende a ser 'Sí'.</td>
+                    <td>94.74%</td>
+                    <td>95</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 3. ¿Cada cuánto tiempo realiza envíos?</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>2 veces por semana</td>
+                    <td>13. ¿Es suficiente la información que le proporcionan acerca de cómo gestionar los envíos que recibe para su inducción?</td>
+                    <td>Tiende a ser '  sí'.</td>
+                    <td>95.35%</td>
+                    <td>43</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 4. ¿Con qué frecuencia recibe, como destinatario, cartas procedentes de otros panelistas?</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>  2 veces por semana</td>
+                    <td>12. ¿Ha recibido instrucciones de formación al inicio de su colaboración como panelista?</td>
+                    <td>Tiende a ser '  sí'.</td>
+                    <td>95.12%</td>
+                    <td>41</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 5. Punto de inducción que utiliza con mayor frecuencia</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>  buzón</td>
+                    <td>13. ¿Es suficiente la información que le proporcionan acerca de cómo gestionar los envíos que recibe para su inducción?</td>
+                    <td>Tiende a ser '  sí'.</td>
+                    <td>87.93%</td>
+                    <td>58</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 6. ¿Deposita las cartas en un lugar distinto al que inicialmente le indican las instrucciones?</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>  nunca</td>
+                    <td>7. ¿Cuál es el cambio de punto de inducción más frecuente? - Selected Choice</td>
+                    <td>Tiende a ser '  nunca he cambiado de punto de inducción'.</td>
+                    <td>89.09%</td>
+                    <td>55</td>
+                </tr>
+        
+                <tr>
+                    <td>  nunca</td>
+                    <td>13. ¿Es suficiente la información que le proporcionan acerca de cómo gestionar los envíos que recibe para su inducción?</td>
+                    <td>Tiende a ser '  sí'.</td>
+                    <td>98.15%</td>
+                    <td>54</td>
+                </tr>
+        
+                <tr>
+                    <td>  nunca</td>
+                    <td>14. ¿Es suficiente la información inicial que le proporcionan para la cumplimentación de los datos asociados con los envíos que usted recibe?</td>
+                    <td>Tiende a ser 'Sí'.</td>
+                    <td>98.15%</td>
+                    <td>54</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 7. ¿Cuál es el cambio de punto de inducción más frecuente? - Selected Choice</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>  nunca he cambiado de punto de inducción</td>
+                    <td>13. ¿Es suficiente la información que le proporcionan acerca de cómo gestionar los envíos que recibe para su inducción?</td>
+                    <td>Tiende a ser '  sí'.</td>
+                    <td>96.08%</td>
+                    <td>51</td>
+                </tr>
+        
+                <tr>
+                    <td>  nunca he cambiado de punto de inducción</td>
+                    <td>14. ¿Es suficiente la información inicial que le proporcionan para la cumplimentación de los datos asociados con los envíos que usted recibe?</td>
+                    <td>Tiende a ser 'Sí'.</td>
+                    <td>98.04%</td>
+                    <td>51</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 8. ¿En ocasiones deposita las cartas en un tramo horario distinto al que inicialmente le indican las instrucciones? - Selected Choice</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>  alguna vez. indique el motivo principal</td>
+                    <td>13. ¿Es suficiente la información que le proporcionan acerca de cómo gestionar los envíos que recibe para su inducción?</td>
+                    <td>Tiende a ser '  sí'.</td>
+                    <td>97.87%</td>
+                    <td>47</td>
+                </tr>
+        
+                <tr>
+                    <td>  alguna vez. indique el motivo principal</td>
+                    <td>14. ¿Es suficiente la información inicial que le proporcionan para la cumplimentación de los datos asociados con los envíos que usted recibe?</td>
+                    <td>Tiende a ser 'Sí'.</td>
+                    <td>100.00%</td>
+                    <td>47</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 10. ¿En algún momento ha tenido sospecha de haber sido identificado como Panelista por parte de Correos?</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>  no</td>
+                    <td>11. ¿Qué medidas ha tomado ante la sospecha de haber sido identificado como Panelista por parte de Correos?</td>
+                    <td>Tiende a ser '  no procede por no haber tenido sospecha de ser identificado'.</td>
+                    <td>90.65%</td>
+                    <td>107</td>
+                </tr>
+        
+                <tr>
+                    <td>  no</td>
+                    <td>14. ¿Es suficiente la información inicial que le proporcionan para la cumplimentación de los datos asociados con los envíos que usted recibe?</td>
+                    <td>Tiende a ser 'Sí'.</td>
+                    <td>95.19%</td>
+                    <td>104</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 11. ¿Qué medidas ha tomado ante la sospecha de haber sido identificado como Panelista por parte de Correos?</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>  no procede por no haber tenido sospecha de ser identificado</td>
+                    <td>14. ¿Es suficiente la información inicial que le proporcionan para la cumplimentación de los datos asociados con los envíos que usted recibe?</td>
+                    <td>Tiende a ser 'Sí'.</td>
+                    <td>94.74%</td>
+                    <td>95</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 12. ¿Ha recibido instrucciones de formación al inicio de su colaboración como panelista?</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>  sí</td>
+                    <td>14. ¿Es suficiente la información inicial que le proporcionan para la cumplimentación de los datos asociados con los envíos que usted recibe?</td>
+                    <td>Tiende a ser 'Sí'.</td>
+                    <td>95.10%</td>
+                    <td>102</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 13. ¿Es suficiente la información que le proporcionan acerca de cómo gestionar los envíos que recibe para su inducción?</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>  sí</td>
+                    <td>14. ¿Es suficiente la información inicial que le proporcionan para la cumplimentación de los datos asociados con los envíos que usted recibe?</td>
+                    <td>Tiende a ser 'Sí'.</td>
+                    <td>98.80%</td>
+                    <td>83</td>
+                </tr>
+        </table></details>
+        <details>
+            <summary>Pregunta: 16. ¿Utiliza el servicio de atención que QUALIMETRIE pone a disposición de los panelistas para resolver cualquier duda o sugerencia?</summary>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Columna Relacionada</th>
+                    <th>Insight</th>
+                    <th>Porcentaje</th>
+                    <th>Registros</th>
+                </tr>
+    
+                <tr>
+                    <td>  sí</td>
+                    <td>17. En caso de haber contestado afirmativamente a la pregunta 16, ¿resuelven sus dudas?</td>
+                    <td>Tiende a ser '  sí'.</td>
+                    <td>95.45%</td>
+                    <td>88</td>
+                </tr>
+        </table></details>
+    <footer>&copy; 2024 KPMG - Reporte Encuesta Panelistas | Todos los derechos reservados.</footer>
+</body>
+</html>

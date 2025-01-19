@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativa General</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            background: linear-gradient(90deg, #002855, #004080);
+            color: white;
+            padding: 25px;
+            margin: 0;
+            font-size: 28px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .collapsible {
+            background: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 800px;
+        }
+        .collapsible-header {
+            background: linear-gradient(135deg, #004080, #0066cc);
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+        .collapsible-content {
+            padding: 20px;
+            display: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #004080;
+            color: white;
+        }
+        td.positive { color: green; font-weight: bold; }
+        td.negative { color: red; font-weight: bold; }
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .open {
+            display: block;
+        }
+    </style>
+    <script>
+        function toggleCollapsible(id) {
+            var content = document.getElementById(id);
+            content.classList.toggle('open');
+        }
+    </script>
+</head>
+<body>
+    <h1>Comparativa de Cambios</h1>
+
+    <div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible('section1')">📊 Resumen de Cambios 2022-2023</div>
+        <div class="collapsible-content" id="section1">
+            <table>
+                <tr><th>Métrica</th><th>Cambio %</th></tr>
+    
+                <tr>
+                    <td>Participación (<6 meses)</td>
+                    <td class="positive">+3.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Participación (>6 meses)</td>
+                    <td class="negative">-3.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia de Envíos (<3 veces al mes)</td>
+                    <td class="negative">-21.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia de Envíos (>3 veces al mes)</td>
+                    <td class="positive">+21.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia con la que recibe cartas (solo 1 semana al mes)</td>
+                    <td class="positive">+15.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia con la que recibe cartas (varias semanas durante el mes)</td>
+                    <td class="positive">+80.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Cambia Siempre el lugar de depósito</td>
+                    <td class="negative">-1.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Nunca cambia el lugar de depósito</td>
+                    <td class="negative">-2.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Cambia con frecuencia la fecha de entrega</td>
+                    <td class="positive">+2.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Ha recibido manual de formación al inicio de su carrera</td>
+                    <td class="positive">+3.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Han resuelto sus dudas desde el servicio de atención (sí)</td>
+                    <td class="negative">-2.00%</td>
+                </tr>
+        </table></div></div>
+    <div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible('section2')">📊 Resumen de Cambios 2020-2023</div>
+        <div class="collapsible-content" id="section2">
+            <table>
+                <tr><th>Métrica</th><th>Cambio %</th></tr>
+    
+                <tr>
+                    <td>Participación (<6 meses)</td>
+                    <td class="positive">+2.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Participación (>6 meses)</td>
+                    <td class="negative">-2.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia de Envíos (<3 veces al mes)</td>
+                    <td class="negative">-51.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia de Envíos (>3 veces al mes)</td>
+                    <td class="positive">+52.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia con la que recibe cartas (solo 1 semana al mes)</td>
+                    <td class="positive">+13.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia con la que recibe cartas (varias semanas durante el mes)</td>
+                    <td class="negative">-15.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Cambia Siempre el lugar de depósito</td>
+                    <td class="positive">+1.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Nunca cambia el lugar de depósito</td>
+                    <td class="positive">+4.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Cambia con frecuencia la fecha de entrega</td>
+                    <td class="positive">+1.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Ha recibido manual de formación al inicio de su carrera</td>
+                    <td class="negative">0.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Han resuelto sus dudas desde el servicio de atención (sí)</td>
+                    <td class="positive">+1.00%</td>
+                </tr>
+        </table></div></div>
+    <div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible('section3')">📊 Resumen de Cambios 2013-2023</div>
+        <div class="collapsible-content" id="section3">
+            <table>
+                <tr><th>Métrica</th><th>Cambio %</th></tr>
+    
+                <tr>
+                    <td>Participación (<6 meses)</td>
+                    <td class="negative">-2.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Participación (>6 meses)</td>
+                    <td class="positive">+7.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia de Envíos (<3 veces al mes)</td>
+                    <td class="negative">-66.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia de Envíos (>3 veces al mes)</td>
+                    <td class="positive">+66.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia de Envíos (más de 4 veces al mes)</td>
+                    <td class="positive">+58.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia con la que recibe cartas (solo 1 semana al mes)</td>
+                    <td class="positive">+13.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Frecuencia con la que recibe cartas (varias semanas durante el mes)</td>
+                    <td class="negative">-2.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Cambia Siempre el lugar de depósito</td>
+                    <td class="positive">+2.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Nunca cambia el lugar de depósito</td>
+                    <td class="negative">-22.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Cambia con frecuencia la fecha de entrega</td>
+                    <td class="positive">+1.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Ha recibido manual de formación al inicio de su carrera</td>
+                    <td class="negative">-4.00%</td>
+                </tr>
+        
+                <tr>
+                    <td>Han resuelto sus dudas desde el servicio de atención (sí)</td>
+                    <td class="negative">-6.00%</td>
+                </tr>
+        </table></div></div>
+<footer>&copy; 2024 KPMG - Reporte Encuesta Panelistas | Todos los derechos reservados.</footer>
+</body></html>

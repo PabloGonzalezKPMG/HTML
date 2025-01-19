@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Encuesta A Panelistas 2023</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(90deg, #002855, #00509e);
+            padding: 40px 15px;
+            text-align: center;
+            color: white;
+            border-bottom: 4px solid #003366;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+            opacity: 0.4;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .report-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .report-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 25px;
+            text-decoration: none;
+            color: #333;
+            min-width: 260px;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.3s ease;
+            border: 1px solid #ddd;
+        }
+        .report-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+            border-color: #00509e;
+        }
+        .report-card i {
+            font-size: 50px;
+            color: #00509e;
+            margin-bottom: 15px;
+        }
+        .report-card h2 {
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .report-card p {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .report-card button {
+            margin-top: auto;
+            background: #00509e;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .report-card button:hover {
+            background: #002855;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #002855;
+            color: white;
+            font-size: 12px;
+            border-top: 2px solid #003366;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Reporte Encuesta a Panelistas 2023</h1>
+    </header>
+    <main>
+    <div class="report-links">
+
+        <!-- Comparativa con Años Pasados -->
+        <a href="./comparativa.html" class="report-card">
+            <i class="fas fa-chart-line"></i>
+            <h2>Comparativa Años Pasados</h2>
+            <p>Analiza la evolución de los indicadores clave a lo largo del tiempo.</p>
+            <button>Ver Reporte</button>
+        </a>
+
+        <!-- Detalles de Preguntas -->
+        <a href="./detalles_preguntas.html" class="report-card">
+            <i class="fas fa-list"></i>
+            <h2>Detalles de Preguntas</h2>
+            <p>Consulta las estadísticas desglosadas de las preguntas clave de la encuesta.</p>
+            <button>Ver Detalles</button>
+        </a>
+
+        <!-- Análisis Inferencial -->
+        <a href="./analisis_inferencial.html" class="report-card">
+            <i class="fas fa-chart-pie"></i>
+            <h2>Análisis Inferencial</h2>
+            <p>Explora las relaciones y asociaciones significativas identificadas en los datos.</p>
+            <button>Ver Análisis</button>
+        </a>
+
+        <!-- Resumen General -->
+        <a href="./resumen_general.html" class="report-card">
+            <i class="fas fa-file-alt"></i>
+            <h2>Resumen General</h2>
+            <p>Accede a un resumen ejecutivo con los principales hallazgos y tendencias identificadas.</p>
+            <button>Ver Resumen</button>
+        </a>
+    </div>
+    </main>
+    <footer>
+        &copy; 2024 KPMG - Reporte Encuesta Panelistas | Todos los derechos reservados.
+    </footer>
+</body>
+</html>
